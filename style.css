@@ -18,7 +18,7 @@ body {
     width: 400px;
     height: 600px;
     padding: 28px 32px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 /* ------- SEARCH BOX ------- */
@@ -33,6 +33,7 @@ body {
     font-size: 24px;
     padding-left: 32px;
     width: 80%;
+    text-transform: capitalize;
 }
 
 .search-box button {
