@@ -51,3 +51,18 @@ body {
 .search-box i {
     font-size: 28px;
 }
+
+/* ------- WEATHER BOX ------- */
+.weather-box {
+    text-align: center;
+}
+
+.weather-box .temperature {
+    position: relative;
+    font-size: 4rem;
+    margin-top: 30px;
+}
+
+.weather-box .description {
+    font-size: 22px;
+}
