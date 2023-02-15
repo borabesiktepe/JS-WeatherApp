@@ -66,3 +66,28 @@ body {
 .weather-box .description {
     font-size: 22px;
 }
+
+/* ------- WEATHER DETAILS ------- */
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-details .humidity, .weather-details .wind {
+    display: flex;
+    align-items: center;
+}
+
+.weather-details i {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.weather-details span {
+    font-size: 22px;
+}
+
+.weather-details p {
+    font-size: 14px;
+}
