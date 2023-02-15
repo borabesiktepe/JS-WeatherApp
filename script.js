@@ -10,15 +10,17 @@ search.addEventListener('click', () => {
     if (city === "")
         return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}"`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(json => {
-            const temperature = document.querySelector(".weather-box temperature");
-            const description = document.querySelector(".weather-box description");
-            const humidity = document.querySelector(".weather-box humidity");
-            const wind = document.querySelector(".weather-box wind");
+            console.log(json);
 
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+            const temperature = document.querySelector(".weather-box .temperature");
+            const description = document.querySelector(".weather-box .description");
+            const humidity = document.querySelector(".weather-details .humidity");
+            const wind = document.querySelector(".weather-details .wind");
+
+            temperature.innerHTML = `${parseInt(json.main.temp)}`;
             description.innerHTML = `${json.weather[0].description}`;
             humidity.innerHTML = `${json.main.humidity}%`;
             wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
